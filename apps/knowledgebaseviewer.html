@@ -19,20 +19,24 @@
   <section class="detail-hero">
     <span class="hero-eyebrow">Desktop App · Learning Project</span>
     <h1>KnowledgeBaseViewer</h1>
-    <p class="lead">Desktop app for browsing my KnowledgeBase folder — scans folders/files/subsections, reads HTML metadata, and supports renaming entries from a dialog.</p>
+    <p class="lead">Doubles as a file and shortcut viewer — browse outlines and images, expand outline sections inline, and jump straight into any linked path. I also use it as my own ticketing system: AI generates development tickets the way a software team would, organized into sprints with checklists that save their completed state, in both a Guided Mode and an Employer Mode view.</p>
     <div class="card-badges">
       <span class="card-badge">C#</span><span class="card-badge">WPF</span>
     </div>
     <p class="ai-note">AI-assisted with Claude Code &amp; OpenAI/Codex</p>
   </section>
 
-  <div class="detail-slideshow">
-    <div class="detail-placeholder"><span class="icon">🖼️</span><span>Screenshots coming later</span></div>
+  <div class="detail-slideshow" data-slideshow="detail">
+    <img id="detailSlide1" class="active" src="../images/KnowledgeBaseViewer-Screenshot1.png" alt="KnowledgeBaseViewer main screen" />
+    <img id="detailSlide2" src="../images/KnowledgeBaseViewer-Screenshot2.png" alt="KnowledgeBaseViewer outline view" />
+    <img id="detailSlide3" src="../images/KnowledgeBaseViewer-Screenshot3.png" alt="KnowledgeBaseViewer in use" />
+    <img id="detailSlide4" src="../images/KnowledgeBaseViewer-Screenshot4.png" alt="KnowledgeBaseViewer in use" />
   </div>
-  <div class="detail-thumbs">
-    <button type="button" disabled style="opacity:.4;cursor:default;"></button>
-    <button type="button" disabled style="opacity:.4;cursor:default;"></button>
-    <button type="button" disabled style="opacity:.4;cursor:default;"></button>
+  <div class="detail-thumbs" data-thumbs="detail">
+    <button type="button" class="active" data-slide="detailSlide1" style="background-image:url('../images/KnowledgeBaseViewer-Screenshot1.png')" aria-label="Show screenshot 1"></button>
+    <button type="button" data-slide="detailSlide2" style="background-image:url('../images/KnowledgeBaseViewer-Screenshot2.png')" aria-label="Show screenshot 2"></button>
+    <button type="button" data-slide="detailSlide3" style="background-image:url('../images/KnowledgeBaseViewer-Screenshot3.png')" aria-label="Show screenshot 3"></button>
+    <button type="button" data-slide="detailSlide4" style="background-image:url('../images/KnowledgeBaseViewer-Screenshot4.png')" aria-label="Show screenshot 4"></button>
   </div>
 
   <div class="sections">
@@ -61,7 +65,7 @@
     </div>
   </div>
 </main>
-<footer><a href="https://m1sh3ll3.com/" target="_blank" rel="noopener">m1sh3ll3.com</a> — Michelle Nesbitt's portfolio.</footer>
+<footer><a href="https://m1sh3ll.github.io/" target="_blank" rel="noopener">MicroApps</a> — Michelle Nesbitt's portfolio.</footer>
 <script src="../script.js"></script>
 </body>
 </html>

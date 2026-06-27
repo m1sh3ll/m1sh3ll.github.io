@@ -25,13 +25,17 @@
     </div>
   </section>
 
-  <div class="detail-slideshow">
-    <div class="detail-placeholder"><span class="icon">🖼️</span><span>Screenshots coming later</span></div>
+  <div class="detail-slideshow" data-slideshow="detail">
+    <img id="detailSlide1" class="active" src="../images/CloudIgnore-Screenshot1.png" alt="CloudIgnore dashboard" />
+    <img id="detailSlide2" src="../images/CloudIgnore-Screenshot2.png" alt="CloudIgnore scan results" />
+    <img id="detailSlide3" src="../images/CloudIgnore-Screenshot3.png" alt="CloudIgnore in use" />
+    <img id="detailSlide4" src="../images/CloudIgnore-Screenshot4.png" alt="CloudIgnore in use" />
   </div>
-  <div class="detail-thumbs">
-    <button type="button" disabled style="opacity:.4;cursor:default;"></button>
-    <button type="button" disabled style="opacity:.4;cursor:default;"></button>
-    <button type="button" disabled style="opacity:.4;cursor:default;"></button>
+  <div class="detail-thumbs" data-thumbs="detail">
+    <button type="button" class="active" data-slide="detailSlide1" style="background-image:url('../images/CloudIgnore-Screenshot1.png')" aria-label="Show screenshot 1"></button>
+    <button type="button" data-slide="detailSlide2" style="background-image:url('../images/CloudIgnore-Screenshot2.png')" aria-label="Show screenshot 2"></button>
+    <button type="button" data-slide="detailSlide3" style="background-image:url('../images/CloudIgnore-Screenshot3.png')" aria-label="Show screenshot 3"></button>
+    <button type="button" data-slide="detailSlide4" style="background-image:url('../images/CloudIgnore-Screenshot4.png')" aria-label="Show screenshot 4"></button>
   </div>
 
   <div class="about-grid" style="margin-top:10px;">
@@ -46,6 +50,7 @@
       <h3>Core MVP</h3>
       <ul>
         <li>Choose a root folder + ignore profile</li>
+        <li>Import an existing .gitignore as a new profile</li>
         <li>Scan recursively for matches</li>
         <li>Preview before applying</li>
         <li>Apply / Undo the Dropbox ignore flag</li>
@@ -63,14 +68,14 @@
     <div class="section-card">
       <h3>Future Features</h3>
       <ul>
-        <li>Custom file/folder rule editor</li>
+        <li>Custom rule editor beyond .gitignore import</li>
         <li>OneDrive/Google Drive detection + guidance (no equivalent ignore API exists there)</li>
         <li>Installer and GitHub release</li>
       </ul>
     </div>
   </div>
 </main>
-<footer><a href="https://m1sh3ll3.com/" target="_blank" rel="noopener">m1sh3ll3.com</a> — Michelle Nesbitt's portfolio.</footer>
+<footer><a href="https://m1sh3ll.github.io/" target="_blank" rel="noopener">MicroApps</a> — Michelle Nesbitt's portfolio.</footer>
 <script src="../script.js"></script>
 </body>
 </html>

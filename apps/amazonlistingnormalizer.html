@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>MicroRenamerWPF — Michelle Nesbitt</title>
+<title>AmazonListingNormalizer.App — Michelle Nesbitt</title>
 <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
 <link rel="stylesheet" href="../styles.css" />
 </head>
@@ -18,50 +18,49 @@
   </div>
   <section class="detail-hero">
     <span class="hero-eyebrow">Desktop App</span>
-    <h1>MicroRenamerWPF</h1>
-    <p class="lead">Desktop file-renaming and image-prep tool built for Syntax Communications. Has a "PWA Resize Tool" tab that embeds my web companion app (MicroRenamerWEB) right inside the desktop window via WebView2 — so the renamer and the resize/gallery tools live in one app.</p>
+    <h1>AmazonListingNormalizer.App</h1>
+    <p class="lead">Amazon exports separate category listing reports with different field structures, each running thousands of rows. Normalizing them by hand would take hours. This tool combines the key fields — main image, SKU, and quantity — from every report into one clean, unified spreadsheet.</p>
     <div class="card-badges">
       <span class="card-badge">C#</span><span class="card-badge">WPF</span>
-      <span class="card-badge">ImageSharp</span><span class="card-badge">Open XML</span><span class="card-badge">WebView2</span>
     </div>
   </section>
 
   <div class="detail-slideshow" data-slideshow="detail">
-    <img id="detailSlide1" class="active" src="../images/MicroRenamerWPF-Screenshot1.png" alt="MicroRenamerWPF main renamer view" />
-    <img id="detailSlide2" src="../images/MicroRenamerWPF-Screenshot2.png" alt="MicroRenamerWEB PWA tab" />
-    <img id="detailSlide3" src="../images/MicroRenamerWPF-Screenshot3.png" alt="SmartSitesGalleryFormatter PWA tab" />
+    <img id="detailSlide1" class="active" src="../images/AmazonListingNormalizer-Screenshot1.png" alt="AmazonListingNormalizer.App main screen" />
+    <img id="detailSlide2" src="../images/AmazonListingNormalizer-Screenshot2.png" alt="AmazonListingNormalizer.App in use" />
+    <img id="detailSlide3" src="../images/AmazonListingNormalizer-Screenshot3.png" alt="AmazonListingNormalizer.App in use" />
+    <img id="detailSlide4" src="../images/AmazonListingNormalizer-Screenshot4.png" alt="AmazonListingNormalizer.App in use" />
   </div>
   <div class="detail-thumbs" data-thumbs="detail">
-    <button type="button" class="active" data-slide="detailSlide1" style="background-image:url('../images/MicroRenamerWPF-Screenshot1.png')" aria-label="Show MicroRenamerWPF"></button>
-    <button type="button" data-slide="detailSlide2" style="background-image:url('../images/MicroRenamerWPF-Screenshot2.png')" aria-label="Show MicroRenamerWEB"></button>
-    <button type="button" data-slide="detailSlide3" style="background-image:url('../images/MicroRenamerWPF-Screenshot3.png')" aria-label="Show SmartSitesGalleryFormatter"></button>
+    <button type="button" class="active" data-slide="detailSlide1" style="background-image:url('../images/AmazonListingNormalizer-Screenshot1.png')" aria-label="Show screenshot 1"></button>
+    <button type="button" data-slide="detailSlide2" style="background-image:url('../images/AmazonListingNormalizer-Screenshot2.png')" aria-label="Show screenshot 2"></button>
+    <button type="button" data-slide="detailSlide3" style="background-image:url('../images/AmazonListingNormalizer-Screenshot3.png')" aria-label="Show screenshot 3"></button>
+    <button type="button" data-slide="detailSlide4" style="background-image:url('../images/AmazonListingNormalizer-Screenshot4.png')" aria-label="Show screenshot 4"></button>
   </div>
 
   <div class="sections">
     <div class="section-card">
       <h3>Core MVP</h3>
       <ul>
-        <li>Bulk file renaming &amp; text cleanup</li>
-        <li>Case conversion, date stamping, bullet/title tools</li>
-        <li>Embedded "PWA Resize Tool" tab</li>
-        <li>Preset clipboard text snippets</li>
+        <li>Import multiple XLSX/CSV category reports</li>
+        <li>Auto-match common marketplace headers</li>
+        <li>Combine into one clean export (Title, SKU, ASIN, Price, Main Image URL, Product Id, Product Type)</li>
       </ul>
     </div>
     <div class="section-card">
       <h3>Employer Skills</h3>
       <ul>
         <li>WPF desktop UI</li>
-        <li>WebView2 embedding of a web app</li>
-        <li>ImageSharp &amp; Open XML integration</li>
-        <li>Multi-tool tabbed app design</li>
+        <li>Spreadsheet parsing across inconsistent report formats</li>
+        <li>Header/row detection that skips instructions and example rows automatically</li>
       </ul>
     </div>
     <div class="section-card">
       <h3>Future Features</h3>
       <ul>
-        <li>Additional renaming presets</li>
-        <li>More PWA tools surfaced in-app</li>
-        <li>Settings persistence across sessions</li>
+        <li>Support for more Amazon report types</li>
+        <li>Saved column-mapping presets</li>
+        <li>Batch processing across multiple folders</li>
       </ul>
     </div>
   </div>

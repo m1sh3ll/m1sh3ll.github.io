@@ -19,20 +19,20 @@
   <section class="detail-hero">
     <span class="hero-eyebrow">Desktop App · Learning Project</span>
     <h1>Touch Grass</h1>
-    <p class="lead">Personal WPF focus-timer app, built phase-by-phase as a learning project; currently on Phase 5 (Reminders).</p>
+    <p class="lead">A learning project — built by following an AI-generated, step-by-step guide instead of pasting in finished code, using MVVM throughout. Still a work in progress.</p>
     <div class="card-badges">
       <span class="card-badge">WPF</span><span class="card-badge">.NET</span><span class="card-badge">MVVM</span>
     </div>
     <p class="ai-note">AI-assisted with Claude Code &amp; OpenAI/Codex</p>
   </section>
 
-  <div class="detail-slideshow">
-    <div class="detail-placeholder"><span class="icon">🖼️</span><span>Screenshots coming later</span></div>
+  <div class="detail-slideshow" data-slideshow="detail">
+    <img id="detailSlide1" class="active" src="../images/TouchGrass-Screenshot1.png" alt="Touch Grass main screen" />
+    <img id="detailSlide2" src="../images/TouchGrass-Screenshot2.png" alt="Touch Grass in use" />
   </div>
-  <div class="detail-thumbs">
-    <button type="button" disabled style="opacity:.4;cursor:default;"></button>
-    <button type="button" disabled style="opacity:.4;cursor:default;"></button>
-    <button type="button" disabled style="opacity:.4;cursor:default;"></button>
+  <div class="detail-thumbs" data-thumbs="detail">
+    <button type="button" class="active" data-slide="detailSlide1" style="background-image:url('../images/TouchGrass-Screenshot1.png')" aria-label="Show screenshot 1"></button>
+    <button type="button" data-slide="detailSlide2" style="background-image:url('../images/TouchGrass-Screenshot2.png')" aria-label="Show screenshot 2"></button>
   </div>
 
   <div class="sections">
@@ -62,7 +62,7 @@
     </div>
   </div>
 </main>
-<footer><a href="https://m1sh3ll3.com/" target="_blank" rel="noopener">m1sh3ll3.com</a> — Michelle Nesbitt's portfolio.</footer>
+<footer><a href="https://m1sh3ll.github.io/" target="_blank" rel="noopener">MicroApps</a> — Michelle Nesbitt's portfolio.</footer>
 <script src="../script.js"></script>
 </body>
 </html>

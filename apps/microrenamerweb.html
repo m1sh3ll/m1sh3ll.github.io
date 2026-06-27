@@ -19,20 +19,23 @@
   <section class="detail-hero">
     <span class="hero-eyebrow">Web App</span>
     <h1>MicroRenamerWEB</h1>
-    <p class="lead">Web companion to the desktop renamer — PWA layout, alt-text generation service, and page components. Embedded inside MicroRenamerWPF's "PWA Resize Tool" tab via WebView2.</p>
+    <p class="lead">Web companion to the desktop renamer — image resize slider, alt-text generation, and the SmartSites Gallery tool, all running live on a domain I manage myself (hosting, DNS, and nameservers included). Also embedded inside MicroRenamerWPF's "PWA Resize Tool" tab via WebView2.</p>
     <div class="card-badges">
       <span class="card-badge">Blazor Server</span><span class="card-badge">.NET 9</span>
       <span class="card-badge">Radzen</span><span class="card-badge">WebView2/PWA</span>
     </div>
+    <p><a class="card-link" href="https://nerdommicro.com" target="_blank" rel="noopener">Try it live at nerdommicro.com →</a></p>
   </section>
 
-  <div class="detail-slideshow">
-    <div class="detail-placeholder"><span class="icon">🖼️</span><span>Screenshots coming later</span></div>
+  <div class="detail-slideshow" data-slideshow="detail">
+    <img id="detailSlide1" class="active" src="../images/MicroRenamerWEB-Screenshot1.png" alt="MicroRenamerWEB resize tool" />
+    <img id="detailSlide2" src="../images/MicroRenamerWEB-Screenshot2.png" alt="MicroRenamerWEB in use" />
+    <img id="detailSlide3" src="../images/MicroRenamerWEB-Screenshot3.png" alt="MicroRenamerWEB in use" />
   </div>
-  <div class="detail-thumbs">
-    <button type="button" disabled style="opacity:.4;cursor:default;"></button>
-    <button type="button" disabled style="opacity:.4;cursor:default;"></button>
-    <button type="button" disabled style="opacity:.4;cursor:default;"></button>
+  <div class="detail-thumbs" data-thumbs="detail">
+    <button type="button" class="active" data-slide="detailSlide1" style="background-image:url('../images/MicroRenamerWEB-Screenshot1.png')" aria-label="Show screenshot 1"></button>
+    <button type="button" data-slide="detailSlide2" style="background-image:url('../images/MicroRenamerWEB-Screenshot2.png')" aria-label="Show screenshot 2"></button>
+    <button type="button" data-slide="detailSlide3" style="background-image:url('../images/MicroRenamerWEB-Screenshot3.png')" aria-label="Show screenshot 3"></button>
   </div>
 
   <div class="sections">
@@ -63,7 +66,7 @@
     </div>
   </div>
 </main>
-<footer><a href="https://m1sh3ll3.com/" target="_blank" rel="noopener">m1sh3ll3.com</a> — Michelle Nesbitt's portfolio.</footer>
+<footer><a href="https://m1sh3ll.github.io/" target="_blank" rel="noopener">MicroApps</a> — Michelle Nesbitt's portfolio.</footer>
 <script src="../script.js"></script>
 </body>
 </html>

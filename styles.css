@@ -183,7 +183,7 @@ section:first-of-type { border-top: none; }
 .ai-note::before { content: "✓"; font-weight: 800; }
 
 .coming-later { font-size: 0.78rem; color: var(--muted); font-style: italic; margin: 4px 0 0; }
-.card-footer { display: flex; justify-content: flex-end; padding: 0 20px 18px; }
+.card-footer { display: flex; justify-content: flex-end; gap: 14px; padding: 0 20px 18px; }
 .card-link {
   font-weight: 700; font-size: 0.86rem; text-decoration: none; color: var(--accent);
   display: inline-flex; align-items: center; gap: 4px;

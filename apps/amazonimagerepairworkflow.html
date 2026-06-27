@@ -19,19 +19,21 @@
   <section class="detail-hero">
     <span class="hero-eyebrow">Tool</span>
     <h1>AmazonImageRepairWorkflow</h1>
-    <p class="lead">Real, already-working tool for fixing/repairing Amazon product image data — the most complete app brought into Project Unify so far.</p>
+    <p class="lead">A fast way to fix broken or missing Amazon product images — especially handy for suppressed listings that need an image fix. Highlight the SKU table from Manage Inventory and paste it straight into the app. The Download button looks up each SKU's image URL via Google Sheets and the Amazon API, resizes the image, and downloads it. The FTP button does the same, then uploads the result and hands back the new image URL.</p>
     <div class="card-badges">
       <span class="card-badge">C#/.NET</span>
     </div>
   </section>
 
-  <div class="detail-slideshow">
-    <div class="detail-placeholder"><span class="icon">🖼️</span><span>Screenshots coming later</span></div>
+  <div class="detail-slideshow" data-slideshow="detail">
+    <img id="detailSlide1" class="active" src="../images/AmazonImageRepairWorkflow-Screenshot1.png" alt="AmazonImageRepairWorkflow main screen" />
+    <img id="detailSlide2" src="../images/AmazonImageRepairWorkflow-Screenshot2.png" alt="AmazonImageRepairWorkflow in use" />
+    <img id="detailSlide3" src="../images/AmazonImageRepairWorkflow-Screenshot3.png" alt="AmazonImageRepairWorkflow in use" />
   </div>
-  <div class="detail-thumbs">
-    <button type="button" disabled style="opacity:.4;cursor:default;"></button>
-    <button type="button" disabled style="opacity:.4;cursor:default;"></button>
-    <button type="button" disabled style="opacity:.4;cursor:default;"></button>
+  <div class="detail-thumbs" data-thumbs="detail">
+    <button type="button" class="active" data-slide="detailSlide1" style="background-image:url('../images/AmazonImageRepairWorkflow-Screenshot1.png')" aria-label="Show screenshot 1"></button>
+    <button type="button" data-slide="detailSlide2" style="background-image:url('../images/AmazonImageRepairWorkflow-Screenshot2.png')" aria-label="Show screenshot 2"></button>
+    <button type="button" data-slide="detailSlide3" style="background-image:url('../images/AmazonImageRepairWorkflow-Screenshot3.png')" aria-label="Show screenshot 3"></button>
   </div>
 
   <div class="sections">
@@ -61,7 +63,7 @@
     </div>
   </div>
 </main>
-<footer><a href="https://m1sh3ll3.com/" target="_blank" rel="noopener">m1sh3ll3.com</a> — Michelle Nesbitt's portfolio.</footer>
+<footer><a href="https://m1sh3ll.github.io/" target="_blank" rel="noopener">MicroApps</a> — Michelle Nesbitt's portfolio.</footer>
 <script src="../script.js"></script>
 </body>
 </html>
