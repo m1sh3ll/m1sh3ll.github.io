@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CloudIgnore — Michelle Nesbitt</title>
+<link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+<main id="main" style="padding-bottom:40px;">
+  <a class="back-link" href="../index.html#work">← Back to portfolio</a>
+  <section class="detail-hero">
+    <span class="hero-eyebrow">Desktop App</span>
+    <h1>CloudIgnore</h1>
+    <p class="lead">A WPF dashboard for tagging build folders (bin, obj, .vs, node_modules, etc.) with Dropbox's hidden "ignore" NTFS attribute, so they stop syncing — without anyone needing to know PowerShell or that the attribute even exists. Scan a root folder, preview every match against an active rule profile, then apply or undo the ignore flag with one click.</p>
+    <div class="card-badges">
+      <span class="card-badge">C#</span><span class="card-badge">WPF</span><span class="card-badge">Object-Oriented (no MVVM)</span><span class="card-badge">NTFS Alternate Data Streams</span>
+    </div>
+  </section>
+
+  <div class="detail-slideshow">
+    <div class="detail-placeholder"><span class="icon">🖼️</span><span>Screenshots coming later</span></div>
+  </div>
+  <div class="detail-thumbs">
+    <button type="button" disabled style="opacity:.4;cursor:default;"></button>
+    <button type="button" disabled style="opacity:.4;cursor:default;"></button>
+    <button type="button" disabled style="opacity:.4;cursor:default;"></button>
+  </div>
+
+  <div class="about-grid" style="margin-top:10px;">
+    <div class="about-item"><strong>Scan</strong><span>Recursively walks a chosen root folder against the active rule profile (e.g. .NET Build Folders: bin, obj, .vs, TestResults).</span></div>
+    <div class="about-item"><strong>Preview</strong><span>Shows every match in a results grid with status — Pending, Already ignored, or Failed — before anything is touched.</span></div>
+    <div class="about-item"><strong>Apply / Undo</strong><span>Writes (or removes) the actual com.dropbox.ignored alternate data stream on the selected items.</span></div>
+    <div class="about-item"><strong>Safety Mode</strong><span>No changes happen until you scan, preview, select items, and explicitly confirm Apply Ignore.</span></div>
+  </div>
+
+  <div class="sections">
+    <div class="section-card">
+      <h3>Core MVP</h3>
+      <ul>
+        <li>Choose a root folder + ignore profile</li>
+        <li>Scan recursively for matches</li>
+        <li>Preview before applying</li>
+        <li>Apply / Undo the Dropbox ignore flag</li>
+      </ul>
+    </div>
+    <div class="section-card">
+      <h3>Employer Skills</h3>
+      <ul>
+        <li>WPF desktop UI</li>
+        <li>Object-oriented service/model design (no MVVM)</li>
+        <li>NTFS alternate data stream manipulation</li>
+        <li>Safe file-system operations</li>
+      </ul>
+    </div>
+    <div class="section-card">
+      <h3>Future Features</h3>
+      <ul>
+        <li>Custom file/folder rule editor</li>
+        <li>OneDrive/Google Drive detection + guidance (no equivalent ignore API exists there)</li>
+        <li>Installer and GitHub release</li>
+      </ul>
+    </div>
+  </div>
+</main>
+<footer>m1sh3ll3.com — Michelle Nesbitt's portfolio.</footer>
+<script src="../script.js"></script>
+</body>
+</html>

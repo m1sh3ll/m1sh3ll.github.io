@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MicroRenamerWPF — Michelle Nesbitt</title>
+<link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+<main id="main" style="padding-bottom:40px;">
+  <a class="back-link" href="../index.html#work">← Back to portfolio</a>
+  <section class="detail-hero">
+    <span class="hero-eyebrow">Desktop App</span>
+    <h1>MicroRenamerWPF</h1>
+    <p class="lead">Desktop file-renaming and image-prep tool built for Syntax Communications. Has a "PWA Resize Tool" tab that embeds my web companion app (MicroRenamerWEB) right inside the desktop window via WebView2 — so the renamer and the resize/gallery tools live in one app.</p>
+    <div class="card-badges">
+      <span class="card-badge">C#</span><span class="card-badge">WPF</span>
+      <span class="card-badge">ImageSharp</span><span class="card-badge">Open XML</span><span class="card-badge">WebView2</span>
+    </div>
+  </section>
+
+  <div class="detail-slideshow" data-slideshow="detail">
+    <img id="detailSlide1" class="active" src="../images/MicroRenamerWPF-Screenshot1.png" alt="MicroRenamerWPF main renamer view" />
+    <img id="detailSlide2" src="../images/MicroRenamerWPF-Screenshot2.png" alt="MicroRenamerWEB PWA tab" />
+    <img id="detailSlide3" src="../images/MicroRenamerWPF-Screenshot3.png" alt="SmartSitesGalleryFormatter PWA tab" />
+  </div>
+  <div class="detail-thumbs" data-thumbs="detail">
+    <button type="button" class="active" data-slide="detailSlide1" style="background-image:url('../images/MicroRenamerWPF-Screenshot1.png')" aria-label="Show MicroRenamerWPF"></button>
+    <button type="button" data-slide="detailSlide2" style="background-image:url('../images/MicroRenamerWPF-Screenshot2.png')" aria-label="Show MicroRenamerWEB"></button>
+    <button type="button" data-slide="detailSlide3" style="background-image:url('../images/MicroRenamerWPF-Screenshot3.png')" aria-label="Show SmartSitesGalleryFormatter"></button>
+  </div>
+
+  <div class="sections">
+    <div class="section-card">
+      <h3>Core MVP</h3>
+      <ul>
+        <li>Bulk file renaming &amp; text cleanup</li>
+        <li>Case conversion, date stamping, bullet/title tools</li>
+        <li>Embedded "PWA Resize Tool" tab</li>
+        <li>Preset clipboard text snippets</li>
+      </ul>
+    </div>
+    <div class="section-card">
+      <h3>Employer Skills</h3>
+      <ul>
+        <li>WPF desktop UI</li>
+        <li>WebView2 embedding of a web app</li>
+        <li>ImageSharp &amp; Open XML integration</li>
+        <li>Multi-tool tabbed app design</li>
+      </ul>
+    </div>
+    <div class="section-card">
+      <h3>Future Features</h3>
+      <ul>
+        <li>Additional renaming presets</li>
+        <li>More PWA tools surfaced in-app</li>
+        <li>Settings persistence across sessions</li>
+      </ul>
+    </div>
+  </div>
+</main>
+<footer>m1sh3ll3.com — Michelle Nesbitt's portfolio.</footer>
+<script src="../script.js"></script>
+</body>
+</html>
