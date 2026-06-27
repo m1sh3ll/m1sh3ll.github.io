@@ -21,3 +21,16 @@ document.addEventListener('click', function (e) {
     t.classList.toggle('active', t === thumb);
   });
 });
+
+// Email links are stored reversed in data-rev so the real address never appears
+// as plain text in the page source for scrapers to harvest. Decoded only on click,
+// via delegation, so it survives Blazor's DOM swap the same way the slideshow does.
+document.addEventListener('click', function (e) {
+  var link = e.target.closest('.email-link');
+  if (!link) return;
+  e.preventDefault();
+  var email = link.getAttribute('data-rev').split('').reverse().join('');
+  link.textContent = email;
+  link.href = 'mailto:' + email;
+  window.location.href = 'mailto:' + email;
+});
